@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+.page-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: "Open Sans";
+    width: 100%;
+    background: var(--background, radial-gradient(177.78% 134.87% at 0% 9%, #FBB508 0%, #C5227F 44.5%, #320331 99.7%));
+    color: #FFF;
+}
+
+.content-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-text {
+    margin-top: 5rem;
+    height: 80px;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: justify;
+    font-family: "Tangerine";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.78px;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+.title-h3 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    flex-shrink: 0;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    text-align: left;
+    font-weight: 700;
+    line-height: normal;
+    width: 328.053px;
+    height: 72.921px;
+}
+
+.description {
+    flex-shrink: 0;
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    line-height: normal;
+    width: 331px;
+    height: 90.599px;
+}
+
+.buttonInit {
+    width: 296px;
+    height: 46px;
+    flex-shrink: 0;
+    border-radius: 17px;
+    background: linear-gradient(90deg, #FFDD59 0%, #FF934D 100%);
+    border: none;
+    outline: none;
+    color: #441170;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+@media (min-width: 767px) {
+    .page-header {
+        height: 100%;
+    }
+    .title-h3 {
+        font-size: 30px;
+        width: 673.603px;
+        height: 156.931px;
+    }    
+    .title-text {
+        font-size: 90px;
+        margin-bottom: 5rem;
+    }
+    .description {
+        font-size: 22px;
+        width: 673.631px;
+        height: 126.31px;
+    }
+    .buttonInit {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,56 @@
+<app-header></app-header>
+
+<div class="background">
+    <div class="container">
+        <div class="section-1">
+            <button class="back-button" (click)="goBack()"><img style="position: absolute; top: 0px; left: -20px;" src="assets/img/arrow.png" alt="arrow">Atrás</button>
+        </div>
+
+        <div class="section-2">
+            <div class="progress-text">7/16</div>
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+
+        <div class="section-3">
+            <div class="question">¿Cuál es tu situación sentimental?</div>
+        </div>
+
+        <div class="section-4">
+            <div class="div1 button" (click)="change()">
+                <img class="questions-img" src="assets/img/casado.png" alt="casado">
+                <label>Casado</label>
+            </div>
+
+            <div class="div2 button" (click)="change()">
+                <img class="questions-img" src="assets/img/comprometido.png" alt="Comprometido">
+                <label>Comprometido</label>
+            </div>
+
+            <div class="div3 button" (click)="change()">
+                <img class="questions-img" src="assets/img/relacion.png" alt="casado">
+                <label>En una relacion</label>
+            </div>
+            <div class="div4 button" (click)="change()">
+                <img class="questions-img" src="assets/img/complicado.png" alt="Comprometido">
+                <label>Es complicado</label>
+            </div>
+
+            <div class="div5 button" (click)="change()">
+                <img class="questions-img" src="assets/img/soltero.png" alt="casado">
+                <label>Soltero</label>
+            </div>
+            <div class="div6 button" (click)="change()">
+                <img class="questions-img" src="assets/img/separado.png" alt="Comprometido">
+                <label>Separado</label>
+            </div>
+        </div>
+
+        <div class="astro">
+        </div>
+
+    </div>
+</div>
+
+<app-footer></app-footer>

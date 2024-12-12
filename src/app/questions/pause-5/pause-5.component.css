@@ -1,0 +1,107 @@
+.background {
+    font-family: "Open Sans";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(161deg, #FFF0CF 0.64%, #FFFEFC 38.86%, #FFFDFA 60.71%, #FFE0F9 97.69%);
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-image {
+    width: 197px;
+    height: 190px;
+}
+
+.astro {
+    position: absolute;
+    top: 420px;
+    left: 50px;
+    width: 380px;
+    height: 364px;
+    opacity: 0.5;
+    background: url("/assets/img/astro.png") center / cover no-repeat;
+    z-index: 1;
+}
+
+.section-1 {
+    
+    margin-top: 2rem;
+    color: #000;
+    /* H2_mobile */
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.section-2 {
+    text-align: left;
+    width: 296px;
+    height: 152px;
+    margin-top: 1rem;
+    color: #000;
+
+    /* H4_mobile */
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.section-3 {
+    margin-top: 1rem;
+    color: #4F4F4F;
+    font-family: "Open Sans";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.button {
+    position: relative;
+    z-index: 2;
+    margin-top: 2rem;
+    width: 296px;
+    height: 42px;
+    border-radius: 17px;
+    background: var(--degrade_purple, linear-gradient(90deg, #B8009B 0%, #420084 100%));
+    color: #E6D6F4;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: none;
+    outline: none;
+}
+
+.astro {
+    width: 380px;
+    height: 364px;
+}

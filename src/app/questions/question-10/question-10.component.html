@@ -1,0 +1,37 @@
+<app-header></app-header>
+
+<div class="background">
+    <div class="container">
+        <div class="section-1">
+            <button class="back-button" (click)="goBack()"><img style="position: absolute; top: 0px; left: -20px;" src="assets/img/arrow.png" alt="arrow">Atrás</button>
+        </div>
+
+        <div class="section-2">
+            <div class="progress-text">16/16</div>
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+
+        <div class="section-3">
+            <div class="question">Tu Carta Astral está lista</div>
+            <div class="subtitle">¿Cuál es tu dirección de correo electrónico?</div>
+        </div>
+
+        <div class="section-4">
+            <label>Email</label>
+            <input class="input" type="email" placeholder="Introduzca su  dirección de correo">
+        </div>
+
+        <div class="section-5">
+            Respetamos tu privacidad y nos comprometemos a proteger tus datos personales. Te enviaremos por correo electrónico la interpretación de tu carta natal.
+        </div>
+
+        <button class="continue" (click)="change()">Continuar</button>
+
+        <div class="astro"></div>
+
+    </div>
+</div>
+
+<app-footer></app-footer>

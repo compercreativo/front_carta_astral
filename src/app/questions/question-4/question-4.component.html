@@ -1,0 +1,51 @@
+<app-header></app-header>
+
+<div class="background">
+    <div class="container">
+        <div class="section-1">
+            <button class="back-button" (click)="goBack()"><img style="position: absolute; top: 0px; left: -20px;"
+                    src="assets/img/arrow.png" alt="arrow">Atrás</button>
+        </div>
+
+        <div class="section-2">
+            <div class="progress-text">6/16</div>
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+
+        <div class="section-3">
+            <div class="question">¿Cuál es tu lugar de nacimiento?</div>
+        </div>
+
+        <div class="section-4">
+            <label>Pais</label>
+            <select (change)="getCities($any($event.target).value)">
+                @for (item of items; track item.country) {
+                    <option value={{item.country}}>{{item.country}}</option>
+                }
+            </select>
+
+            <label>Ciudad</label>
+            <div class="custom-select" [class.active]="isOptionsVisible" (click)="toggleOptions()">
+                <input type="text" placeholder="Buscar ciudad..." [(ngModel)]="searchQuery"
+                    (input)="filterCities($any($event.target).value)">
+                <div class="options" ngIf="filteredCities.length > 0">
+                    @for (citie of filteredCities; track citie) {
+                    <div (click)="selectCity(citie)">
+                        {{ citie }}
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <button class="continue" (click)="change()">Continuar</button>
+
+        <div class="astro">
+
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

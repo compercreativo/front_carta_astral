@@ -1,0 +1,74 @@
+<app-header></app-header>
+
+<div class="background">
+    <div class="container">
+        <div class="section-1">
+            <button class="back-button" (click)="goBack()"><img style="position: absolute; top: 0px; left: -20px;"
+                    src="assets/img/arrow.png" alt="arrow">Atrás</button>
+        </div>
+
+        <div class="section-2">
+            <div class="progress-text">2/16</div>
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+
+        <div class="extra">
+            <div class="title-extra">Con <label class="label">Nuestra Carta Astral</label> obtienes:</div>
+            <div class="grid-extra">
+                <div>
+                    <img class="extra-img" src="assets/img/extra.jpeg" alt="extra">
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>Número de la suerte</li>
+                        <li>Carta astral personalizada</li>
+                        <li>Análisis de relaciones</li>
+                        <li>Cómo mejorar tu vida amorosa</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-3">
+            <div class="question">¿Cuál es tu fecha de nacimiento?</div>
+        </div>
+
+        <div class="section-4">
+            <div style="display: flex; flex-direction: column;">
+                <label>Dia</label>
+                <select>
+                    @for (day of days; track day) {
+                        <option value={{day}}>{{day}}</option>
+                    }
+                </select>
+            </div>
+
+            <div style="display: flex; flex-direction: column;">
+                <label>Mes</label>
+                <select [(ngModel)]="selectedMonth" (change)="updateDays()">
+                    @for (month of months; track month) {
+                        <option value={{month.value}}>{{month.label}}</option>
+                    }
+                </select>
+            </div>
+
+            <div style="display: flex; flex-direction: column;">
+                <label>Año</label>
+                <select [(ngModel)]="selectedYear" (change)="updateDays()">
+                    @for (year of years; track year) {
+                        <option value={{year}}>{{year}}</option>
+                    }
+                </select>
+            </div>
+        </div>
+
+        <button class="continue" (click)="change()">Continuar</button>
+
+        <div class="astro">
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

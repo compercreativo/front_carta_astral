@@ -1,0 +1,42 @@
+<app-header></app-header>
+
+<div class="background">
+    <div class="container">
+        <div class="section-1">
+            <button class="back-button" (click)="goBack()"><img style="position: absolute; top: 0px; left: -20px;" src="assets/img/arrow.png" alt="arrow">Atrás</button>
+        </div>
+
+        <div class="section-2">
+            <div class="progress-text">1/16</div>
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+            
+        </div>
+
+        <div class="section-3">
+            <div class="subtitle">Antes de empezar</div>
+            <div class="question">¿Cuál es tu género?</div>
+        </div>
+
+        <div class="section-4">
+            <button class="gender-button female" (click)="change()">
+                <img src="assets/img/mujer.png" alt="mujer">
+                Mujer
+            </button>
+            <button class="gender-button male" (click)="change()">
+                <img src="assets/img/hombre.png" alt="hombre">
+                Hombre
+            </button>
+            <button class="gender-button other" (click)="change()">
+                <img src="assets/img/otro.png" alt="otro">
+                Otro
+            </button>
+        </div>
+
+        <div class="astro">
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

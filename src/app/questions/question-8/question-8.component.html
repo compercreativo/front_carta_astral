@@ -1,0 +1,52 @@
+<app-header></app-header>
+
+<div class="background">
+    <div class="container">
+        <div class="section-1">
+            <button class="back-button" (click)="goBack()"><img style="position: absolute; top: 0px; left: -20px;" src="assets/img/arrow.png" alt="arrow">Atrás</button>
+        </div>
+
+        <div class="section-2">
+            <div class="progress-text">12/16</div>
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+
+        <div class="section-3">
+            <div class="question">¿Cuáles de las siguientes caracteristicas te identifican más?</div>
+            <div class="subtitle">Por favor, marca las mejores opciones para ti.</div>
+        </div>
+
+        <div class="section-4">
+            <div class="button" (click)="toggleButton($event)">
+                Dinero
+            </div>
+            <div class="button" (click)="toggleButton($event)">
+                Amor
+            </div>
+
+            <div class="button" (click)="toggleButton($event)">
+                Trabajo
+            </div>
+            <div class="button" (click)="toggleButton($event)">
+                Familia
+            </div>
+
+            <div class="button" (click)="toggleButton($event)">
+                Amistad
+            </div>
+            <div class="button" (click)="toggleButton($event)">
+                Tranquilidad
+            </div>
+        </div>
+
+        <button class="continue" (click)="change()">Continuar</button>
+
+        <div class="astro">
+        </div>
+
+    </div>
+</div>
+
+<app-footer></app-footer>

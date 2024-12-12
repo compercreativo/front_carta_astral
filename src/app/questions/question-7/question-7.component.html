@@ -1,0 +1,68 @@
+<app-header></app-header>
+
+<div class="background">
+    <div class="container">
+        <div class="section-1">
+            <button class="back-button" (click)="goBack()"><img style="position: absolute; top: 0px; left: -20px;" src="assets/img/arrow.png" alt="arrow">Atrás</button>
+        </div>
+
+        <div class="section-2">
+            <div class="progress-text">10/16</div>
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+
+        <div class="section-3">
+            <div class="question">¿Cuáles de las siguientes caracteristicas te identifican más?</div>
+            <div class="subtitle">Por favor, marca las mejores opciones para ti. Estos datos coincidirán con la información que se desprende de la carta natal.</div>
+        </div>
+
+        <div class="section-4">
+            <div class="button" (click)="toggleButton($event)">
+                Positivo
+            </div>
+            <div class="button" (click)="toggleButton($event)">
+                Honesto
+            </div>
+            <div class="button" (click)="toggleButton($event)">
+                Inteligente
+            </div>
+            <div class="button" (click)="toggleButton($event)">
+                Autoritario
+            </div>
+            <div class="button" (click)="toggleButton($event)">
+                Emocional
+            </div>
+            <div class="button" (click)="toggleButton($event)">
+                Lógico
+            </div>
+            <div class="button" (click)="toggleButton($event)">
+                Introvertido
+            </div>
+            <div class="button" (click)="toggleButton($event)">
+                Leal
+            </div>
+            <div class="button" (click)="toggleButton($event)">
+                Confiable
+            </div>
+            <div class="button" (click)="toggleButton($event)">
+                Malhumorado
+            </div>
+            <div class="button" (click)="toggleButton($event)">
+                Pesimista
+            </div>
+            <div class="button" (click)="toggleButton($event)">
+                De mente abierta
+            </div>
+        </div>
+
+        <button class="continue" (click)="change()">Continuar</button>
+
+        <div class="astro">
+        </div>
+
+    </div>
+</div>
+
+<app-footer></app-footer>
